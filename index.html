@@ -6,13 +6,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         
 
         <link rel="stylesheet" href="estilos/style.css">
+        <link rel="stylesheet" href="estilos/media-query.css">
 
         <title>Valorant</title>
     </head>
     <body>
+        <main>
+            <section id="login">
+
+                <div id="imagem">
+                <!-- IMAGEM PRINCIPAL NAS CSS -->
+                </div>
+                <div id="formulario">
+
+                    <img src="imagens/logo-valorant.png" alt="logo-valorant" id="logo">
+
+                    <h1>Sign in with your Riot Account</h1>
         
+                    <form action="login.php" method="post" class="form">
+
+                        <label for="iemail">Login</label>
+                        <input type="email" name="email" id="iemail" placeholder="USERNAME"><br>
+
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" placeholder="PASSWORD"><br>
+
+                        <input type="checkbox" name="permanecer-conectado" id="iconectado"> Stay signed in <br>
+
+                        <a href="#"><span class="material-symbols-outlined" id="iseta">arrow_forward</span></a><br>
+                        <a href="#">CREATE ACCOUNT</a><br>
+                        <a href="#">CAN'T SIGN IN?</a> <p>V20.7.0</p>
+                        
+                    </form>
+                </div>
+            </section>
+        </main>
     </body>
+
 </html>

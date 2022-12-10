@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/*-------------------------------------
+            PALETA DE CORES
+
+Vermelho: #BC252A
+Preto: #111111
+Cinza: 
+Cinza escuro: #E7E7E7
+-------------------------------------*/
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 992px) {
+
+    section#login {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+    }
+
+    section#login > div#imagem {
+        float: right;
+        width: 70%;
+        height: 100%;
+        background-position: center center;
+    }
+
+    section#login > div#formulario > img#logo {
+        width: 50px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+    section#login > div#formulario {
+        float: left;
+        width: 30%;
+    }
+}
