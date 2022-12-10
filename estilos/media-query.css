@@ -32,13 +32,38 @@ Cinza escuro: #E7E7E7
     }
 
     section#login > div#formulario > img#logo {
-        width: 50px;
-        margin-top: 50px;
-        margin-left: 50px;
+        width: 60px;
+        margin-top: 70px;
+        margin-left: 80px;
     }
 
     section#login > div#formulario {
         float: left;
         width: 30%;
     }
+
+    div#formulario > h1 {
+        text-align: left;
+        margin-top: 60px;
+        margin-left: 70px;
+        margin-bottom: 10px;
+    }
+    
+    button#iseta {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 50%;
+        height: 65px;
+        width: 65px;
+        border: 1px solid rgba(128, 128, 128, 0.342);
+        border-radius: 20px;
+        background-color: white;
+        color: rgba(128, 128, 128, 0.342);
+    }
+    
+    button#iseta:hover {
+        background-color: #FF4654;
+        color: white;
+    }
+
 }

@@ -9,6 +9,7 @@ Cinza:
 Cinza escuro: #E7E7E7
 -------------------------------------*/
 
+
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
@@ -63,5 +64,22 @@ div#formulario > h1 {
     margin-top: 60px;
     margin-left: 15px;
     margin-bottom: 10px;
+}
+
+button#iseta {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50%;
+    height: 60px;
+    width: 60px;
+    border: 1px solid rgba(128, 128, 128, 0.342);
+    border-radius: 10px;
+    background-color: white;
+    color: rgba(128, 128, 128, 0.342);
+}
+
+button#iseta:hover {
+    background-color: #FF4654;
+    color: white;
 }
 
