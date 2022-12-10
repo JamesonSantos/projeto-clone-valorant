@@ -25,21 +25,27 @@
 
                     <img src="imagens/logo-valorant.png" alt="logo-valorant" id="logo">
 
-                    <h1>Sign in with your Riot Account</h1>
+                    <h1>Sign in with your Riot <br> Account</h1>
         
                     <form action="login.php" method="post" class="form">
 
-                        <label for="iemail">Login</label>
-                        <input type="email" name="email" id="iemail" placeholder="USERNAME"><br>
+                        <div class="campo">
+                            <input type="email" name="email" id="iemail" placeholder="USERNAME" required>
+                            <label for="iemail">Login</label>
+                        </div><br>
 
-                        <label for="isenha">Senha</label>
-                        <input type="password" name="senha" id="isenha" placeholder="PASSWORD"><br>
+                        <div class="campo">
+                            <input type="password" name="senha" id="isenha" placeholder="PASSWORD" required autocomplete="current-password" minlength="8">
+                            <label for="isenha">Senha</label>
+                        </div><br>
 
-                        <input type="checkbox" name="permanecer-conectado" id="iconectado"> Stay signed in <br>
+                        <input type="checkbox" name="permanecer-conectado" id="conectado"> Stay signed in <br>
 
-                        <a href="#"><span class="material-symbols-outlined" id="iseta">arrow_forward</span></a><br>
+                        <button><span class="material-symbols-outlined" id="iseta">arrow_forward</span></button><br>
+                        
                         <a href="#">CREATE ACCOUNT</a><br>
-                        <a href="#">CAN'T SIGN IN?</a> <p>V20.7.0</p>
+                        <a href="#">CAN'T SIGN IN?</a> 
+                        <p>V20.7.0</p>
                         
                     </form>
                 </div>

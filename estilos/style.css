@@ -58,3 +58,10 @@ section#login > div#formulario {
     padding: 10px;
 }
 
+div#formulario > h1 {
+    text-align: left;
+    margin-top: 60px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
