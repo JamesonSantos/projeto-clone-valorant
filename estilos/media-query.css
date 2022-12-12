@@ -16,7 +16,7 @@ Cinza escuro: #E7E7E7
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 700px) {
 
     section#login {
         width: 100vw;
@@ -34,7 +34,15 @@ Cinza escuro: #E7E7E7
     section#login > div#formulario > img#logo {
         width: 60px;
         margin-top: 70px;
-        margin-left: 80px;
+        margin-bottom: 30px;
+        margin-left: 150px;
+    }
+
+    span#ajuda {
+        position: absolute;
+        color: #808080;
+        margin-top: 80px;
+        margin-left: 450px;
     }
 
     section#login > div#formulario {
@@ -42,28 +50,109 @@ Cinza escuro: #E7E7E7
         width: 30%;
     }
 
+    form > div.campo {
+        text-align: center;
+    }
+
+    form > div.campo > input::placeholder {
+        color: #808080cc;
+        font-weight: bold;
+        font-size: 1em;
+        transition: .3s;
+    }
+
+    form > div.campo > input {
+        padding: 15px;
+        width: 60%;
+        height: 100%;
+        border: none;
+        font-size: 0.8em;
+        background-color: #8080801f;
+    }
+
+    form > div.campo > input:focus-within {
+        background-color: #ffffff;
+    }
+
+    form > div.campo > input:focus::placeholder {
+        transform: translateY(-15px);
+        font-size: 0.8em;
+    }
+
+    form > div.campo > label {
+        display: none;
+    }
+
     div#formulario > h1 {
+        font-size: 2em;
         text-align: left;
         margin-top: 60px;
-        margin-left: 70px;
-        margin-bottom: 10px;
+        margin-left: 150px;
+        margin-bottom: 60px;
+    }
+
+    .checkbox input {
+        display: none;
+    }
+
+    .checkbox label {
+        color: #8080809a;
+        font-weight: bold;
+    }
+
+    .checkbox input + label:before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        border-radius: 2px;
+        display: inline-block;
+        vertical-align: middle; /* Para centralizar o texto com a caixa de check */
+        margin-right: 8px;
+        margin-bottom: 2px;
+        background-color: #8080802f;
+        margin-left: 150px;
+    }
+
+    .checkbox input:checked + label:before {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'/%3E%3Cpolyline fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='12' points='216 72.005 104 184 48 128.005'/%3E%3C/svg%3E");
+        background-color: #FF4654;
+        color: #ffffff;
     }
     
     button#iseta {
         margin-top: 50px;
-        margin-bottom: 50px;
-        margin-left: 50%;
+        margin-bottom: 150px;
         height: 65px;
         width: 65px;
-        border: 1px solid rgba(128, 128, 128, 0.342);
+        border: 1px solid #80808057;
         border-radius: 20px;
         background-color: white;
-        color: rgba(128, 128, 128, 0.342);
+        color: #80808057;
     }
     
     button#iseta:hover {
         background-color: #FF4654;
-        color: white;
+        color: #ffffff;
+    }
+
+    form > a {
+        color: #808080b6;
+        font-size: 0.8em;
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 150px;
+    }
+
+    form > a:hover {
+        color: #80808088;
+    }
+
+    form > p {
+        color: #8080806c;
+        font-size: 0.9em;
+        font-weight: bold;
+        display: inline;
+        margin-left: 280px;
     }
 
 }
